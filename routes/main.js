@@ -29,7 +29,7 @@ app.get('/movie-list', (req, res) => {
         console.log(result);
         //res.json(JSON.stringify(result));
 
-        res.writeHead(200);
+        res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
         var template = `
             <table border="1" margin: auto; text-align: center;>
             <tr>
